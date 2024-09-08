@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/SF-Pro.ttf') format('truetype');
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-image: url('https://res.cloudinary.com/dio2dnpmn/image/upload/v1725781701/borcoski/coverMusic/tqfd94vbzwfpdfrsuh39.png');
+
+  background-size: cover;
+}
+
+.content {
+  font-stretch: expanded;
+  font-family: 'SF Pro' !important;
+  padding: 220px 0 64px 0;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.content > h2 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.lista {
+  padding: 32px;
+  border-radius: 22px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.lista .gigs {
+  display: flex;
+  gap: 32px;
+  color: #fff;
+  align-items: center;
+}
+
+.gigs .fotoGigs {
+  width: 220px;
+  height: 120px;
+  background: #d9d9d9;
+  border-radius: 12px;
+}
+
+.gigs .info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info .dataGigs {
+  display: flex;
+  flex-direction: column;
+}
+
+.dataGigs p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.dataGigs h2 {
+  font-size: 22px;
+}
+
+.ticketGigs {
+  padding: 16px 40px;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 1px solid white;
+
+  cursor: pointer;
+}
+.ticketGigs:hover {
+  background-color: white;
+
+  opacity: 0.5;
+}
+
+.ticketGigs a {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.ticketGigs a:hover {
+  color: #000;
+}
+.info .localGigs {
+  display: flex;
+  align-items: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 920px) {
+  .content {
+    padding: 200px 32px;
+    gap: 32px;
+  }
+
+  .lista {
+    display: flex;
+    gap: 64px !important;
+  }
+
+  .lista .gigs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gigs .fotoGigs {
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .content {
+    padding: 240px 16px !important;
+    gap: 32px;
+  }
+
+  .content h2 {
+    font-size: 40px !important;
+  }
+
+  .gigs .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .info .ticketGigs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bg {
+    background-size: auto 400px;
+    background-repeat: no-repeat;
+    background-position: initial;
+  }
+
+  .content .lista {
+    padding: 0 !important;
+    display: flex;
+    gap: 32px !important;
+  }
+
+  .lista .gigs {
+    border-radius: 8px;
+    background: linear-gradient(180deg, #000 0%, #242020 100%);
+    padding: 22px 12px !important;
+  }
+
+  .gigs .fotoGigs {
+    height: 200px !important;
+  }
+
+  .gigs .info {
+    display: flex;
+    gap: 32px;
+  }
+
+  .info .dataGigs p {
+    font-size: 18px;
+  }
+
+  .dataGigs h2 {
+    font-size: 22px !important;
+  }
+
+  .info .localGigs p {
+    font-size: 22px !important;
+  }
+}

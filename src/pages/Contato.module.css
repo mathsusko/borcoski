@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/SF-Pro.ttf') format('truetype');
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-image: url('https://res.cloudinary.com/dio2dnpmn/image/upload/v1725781701/borcoski/coverMusic/tqfd94vbzwfpdfrsuh39.png');
+
+  background-size: cover;
+  background-position: center;
+  height: 100vh !important; /* Garante altura total da tela */
+}
+
+.content {
+  font-family: 'SF Pro';
+  font-stretch: expanded;
+  color: #fff;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 120px 0;
+
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    padding: 200px 32px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    padding: 150px 16px !important;
+  }
+}
+
+.content .colOne {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 554px;
+}
+
+.colOne h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.colOne p {
+  font-weight: 300;
+  text-align: justify;
+}
+
+.colTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 554px;
+}
+
+.colTwo .talk {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.talk h2 {
+  font-weight: 300;
+}
+.talk p {
+  font-weight: 300;
+  text-align: justify;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contato .row {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.row .info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info .title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.info p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.rowTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.icons {
+  display: flex;
+  gap: 22px;
+}
+.icons a {
+  color: white;
+}

@@ -1,0 +1,106 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  gap: 32px;
+}
+
+header > .lista {
+  display: none;
+  transition: all 0.3s ease; /* Transição suave */
+}
+.header {
+  margin-top: 22px !important;
+
+  padding: 8px 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.4);
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(30px);
+}
+
+.header img {
+  height: 40px;
+}
+
+.header .nav {
+  display: flex;
+  gap: 8px;
+  background: transparent;
+}
+
+.nav button {
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  font-stretch: expanded;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid white;
+  padding: 8px 16px;
+}
+.nav .list {
+  display: none;
+}
+
+@media screen and (max-width: 460px) {
+  .header {
+    width: 368px;
+  }
+
+  .header .nav button {
+    display: none;
+  }
+  .nav .list {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  header > .lista {
+    display: block;
+    justify-content: flex-start !important;
+    width: 368px;
+    max-height: 0; /* Altura inicial 0 para que esteja fechado */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa a altura */
+    transition: max-height 0.3s ease; /* Transição suave para max-height */
+  }
+  .lista.open {
+    max-height: 300px; /* Defina um valor grande o suficiente para conter todo o conteúdo */
+  }
+
+  .lista .navMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+    padding: 8px 32px !important;
+    border-radius: 8px;
+
+    gap: 12px;
+  }
+  .navMobile button {
+    text-align: start;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 22px;
+  }
+}

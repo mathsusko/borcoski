@@ -1,0 +1,98 @@
+.content {
+  padding: 32px 0;
+  color: #fff;
+  border-top: 1px solid #fff;
+}
+
+.footer {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.footer .pages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.pages .page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  cursor: pointer;
+}
+.page .digital {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  width: 555px;
+  border-left: 1px solid #fff;
+  padding: 0px 12px;
+}
+
+.digital .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.digital .text p {
+  font-size: 16px !important;
+  text-align: justify;
+  color: #fff;
+}
+.digital .text p:nth-child(1) {
+  font-weight: 600;
+}
+.digital .text p:nth-child(2) {
+  font-weight: 300;
+}
+.digital .text p > a {
+  font-size: 16px;
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.page .digital img {
+  align-items: center;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.footer .copy {
+  margin-top: 32px;
+  padding: 32px 0 0 0;
+  border-top: 0.5px solid white;
+}
+
+.copy p {
+  text-align: center;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1240px) {
+  .footer {
+    padding: 0 64px;
+  }
+  .page .digital {
+    flex-wrap: wrap;
+    width: auto;
+    border: none;
+    padding: 32px 0;
+    border-top: 1px solid white;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 0 16px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page .digital img {
+    height: 369px;
+  }
+}
